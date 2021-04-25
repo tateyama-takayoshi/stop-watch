@@ -1,0 +1,150 @@
+@charset 'utf-8';
+/* margin padding reset */
+body, div, p,  ul, ol, li, dl, dt, dd, table, th ,td, img, figure,
+h1, h2, h3 ,h4 ,h5, h6, form, select
+{ margin: 0; padding: 0; }
+
+html
+{ -webkit-text-size-adjust: 100%; }
+
+body
+{ -webkit-font-smoothing: antialiased; }
+
+/* remove list point mark */
+ul, ol
+{ list-style: none; }
+
+/* remove border & off descender */
+img
+{ border: 0; vertical-align: middle; }
+
+/* remove descender */
+svg, input, select, textarea, label
+{ vertical-align: middle; }
+
+/* set collapse */
+table
+{ border-collapse: collapse; }
+
+/* break word for all elements */
+*, *:before, *:after
+{w;word-break: break-all;webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+
+pre
+{ white-space: pre-wrap; }
+
+address
+{ font-style: normal; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+p { 
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+/*==============================
+ここまで　リセットcss↑
+ここから　共通css↓
+===============================*/
+/*Base style*/
+main {
+  display: block;
+}
+
+/*style*/
+html {
+  font-size: 14px;
+  font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+  color: #222222;
+}
+
+input, select, textarea {
+  color: #222222;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+.contents-tidy{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-width {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+/*===============================
+ここまで　共通 css↑
+ここから効果↓
+===============================*/
+/*hover*/
+.hover-opacity:hover {
+  transition: opacity 0.2s;
+  opacity: 0.7;
+}
+
+/*focus*/
+input:focus {
+  outline: 0;
+}
+
+/*===============================
+ここまで　効果↑
+ここからコード↓
+===============================*/
+h1 {
+  font: 10px;
+}
+
+.out-line {
+  height: 400px;
+  width: 400px;
+  border: 10px solid;
+  border-color: rgb(224, 224, 224);
+  
+}
+.count-space {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.time-space {
+  padding-left: 20px;
+  font-size: 50px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-push {
+  height: 50px;
+  width: 100px;
+  border: 5px solid;
+  border-color: rgb(224, 224, 224);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
