@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>電卓</title>
+     <!-- 以下css link-->
+     <link rel="stylesheet" href="電卓.css">
+     <!-- 以下jQueryライブラリの読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+      <div class="outline">
+      <input type="text" value="0" id="result" style="text-align: right;" />
+      <div class="tenkey">
+        <input type="button" value="7" class="key"/>
+        <input type="button" value="8" class="key"/>
+        <input type="button" value="9" class="key"/>
+        <input type="button" value="+" class="key"/>
+      </div>
+      <div class="tenkey">
+        <input type="button" value="4" class="key"/>
+        <input type="button" value="5" class="key"/>
+        <input type="button" value="6" class="key"/>
+        <input type="button" value="-" class="key"/>
+      </div>
+      <div class="tenkey">
+        <input type="button" value="1" class="key"/>
+        <input type="button" value="2" class="key"/>
+        <input type="button" value="3" class="key"/>
+        <input type="button" value="*" class="key"/>
+      </div>
+      <div class="tenkey">
+        <input type="button" value="0" class="key"/>
+        <input type="button" value="00" class="key"/>
+        <input type="button" value="." class="key"/>
+        <input type="button" value=/ class="key">
+      </div>
+      <div class="tenkey">
+        <input type="button" value="AC" class="key2"/>
+        <input type="button" value="=" class="key2"/>
+      </div>
+    </div>
+    <!--以下js link-->
+    <script type="text/javascript" src="電卓.js" charset="utf-8"></script>
+  </body>
+</html>

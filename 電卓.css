@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #444;
+  background-color: hsl(0, 0%, 96%);
+}
+
+/*==============================
+ここからコード
+===============================*/
+.outline {
+  height: 200px;
+  width: 200px;
+  border: 10px solid;
+  border-color: rgb(224, 224, 224);
+}
+
+#result {
+  width: 100%;
+}
+
+.key {
+  width: calc(100% / 4);
+}
+
+.key2 {
+  width: calc(100% / 2);
+}
+
+.tenkey {
+  height: calc(100% / 6);
+  display: flex;
+  border-radius: 20px;
+}
