@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #444;
+  background-color: hsl(0, 0%, 96%);
+}
+ul {
+  list-style: none;
+}
+/*==============================
+ここからコード
+===============================*/
+ul {
+  margin: 10px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.outline {
+  height: 500px;
+  width: 500px;
+  border: 10px solid;
+  border-color: rgb(224, 224, 224);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.filter {
+  margin: 0 30px;
+}
+
+.dogs {
+  border: solid;
+  margin: 10px 5px;
+}
+
+img {
+  height: 140px;
+  width: 160px;
+}
+
+.target-area .hidden {
+  display: none;
+}
