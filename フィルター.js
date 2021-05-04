@@ -6,7 +6,7 @@ let targetText; //リストのテキスト
 $(document).on("input", "#search-tex", function () {
   searchText = $(this).val(); //入力文字取得
 
-  if (searchText !== "") {
+  if (searchText !== " ") {
     //入力があった場合
     $(".target-area li").each(function () {
       //リスト毎に行う
@@ -19,5 +19,9 @@ $(document).on("input", "#search-tex", function () {
       } //if indexOz
     }); //jq each
   } //if serchText
+  if (targetText.indexOf(searchText) === " ") {
+    //リストに入力された文字列が存在しない場合
+    $(this).removeClass("hidden");
+  }
 }); //jq documen
 });
