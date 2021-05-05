@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #444;
+  background-color: hsl(0, 0%, 96%);
+}
+ul {
+  list-style: none;
+}
+/*==============================
+ここからコード
+===============================*/
+.outline {
+  height: 200px;
+  width:  200px;
+  border:10px solid;
+  border-color: rgb(224, 224, 224);
+}
+
+img {
+  width: 100%;
+}
+
+.slick-prev, .slick-next {
+  border-color: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+.slick-prev::before {
+    content: "←";
+}
+
+.slick-next::before {
+    content: "→";
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #000;
+    font-family: 'slick';
+}
